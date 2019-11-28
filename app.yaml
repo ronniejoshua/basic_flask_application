@@ -1,0 +1,3 @@
+# https://cloud.google.com/appengine/docs/standard/python3/configuring-your-app-with-app-yaml
+
+runtime: python37
