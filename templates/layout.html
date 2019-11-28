@@ -5,13 +5,11 @@
   <!-- Generic Head [Common for All Pages] -->
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Web Analytics</title>
 
     <!-- Google Tag Manager Code [Jinja Templating]-->
-    <script src="{{ url_for('static', filename='my_gtm.js') }}"></script>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <script src="{{ url_for('static', filename='scripts/my_gtm.js') }}"></script>
   </head>
 
   <!-- Generic Body [Common for All Pages] -->
@@ -19,14 +17,12 @@
     <!-- Generic Navigation Bar for All Pages [Jinja Templating]-->
     {% include 'includes/_navbar.html' %}
 
-    <div class="container">
+    <div>
       {% block body %}
 
 
       {% endblock %}
     </div>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
-
 </html>
