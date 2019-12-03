@@ -4,11 +4,18 @@ import os
 app = Flask(__name__)
 
 
+# Home/Index
 @app.route('/')
 @app.route('/index')
 def index():
     author = "Ronnie Joshua"
     return render_template('index.html', author=author)
+
+
+# About
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 
 # To Solve: https://stackoverflow.com/questions/21714653/flask-css-not-updating
