@@ -6,10 +6,10 @@ app = Flask(__name__)
 
 # Home/Index
 @app.route('/')
-@app.route('/index')
+@app.route('/home')
 def index():
     author = "Ronnie Joshua"
-    return render_template('index.html', author=author)
+    return render_template('home.html', author=author)
 
 
 # About
