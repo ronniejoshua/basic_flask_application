@@ -1,4 +1,4 @@
 # https://cloud.google.com/appengine/docs/standard/python3/specifying-dependencies
 
-Flask==1.1.1
+Flask==2.3.2
 google-cloud-storage==1.23.0
